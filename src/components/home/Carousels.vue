@@ -11,18 +11,17 @@
 </template>
 
 <script lang="ts">
-export default {
-  data() {
-    return {
-      colors: [
-        'indigo',
-        'warning',
-        'pink darken-2',
-        'red lighten-1',
-        'deep-purple accent-4',
-      ],
-      slides: ['First', 'Second', 'Third', 'Fourth', 'Fifth'],
-    };
-  },
-};
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component
+export default class Carousels extends Vue {
+  colors = [
+    'indigo',
+    'warning',
+    'pink darken-2',
+    'red lighten-1',
+    'deep-purple accent-4',
+  ];
+  slides = ['First', 'Second', 'Third', 'Fourth', 'Fifth'];
+}
 </script>
