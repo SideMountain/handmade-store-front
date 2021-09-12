@@ -1,24 +1,24 @@
-# vuetify-app
+# handmade-store-front
 
-## Project setup
-```
-yarn install
-```
+## セットアップ
 
-### Compiles and hot-reloads for development
 ```
-yarn serve
+npm install
 ```
 
-### Compiles and minifies for production
+### vscode の拡張
+
 ```
-yarn build
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension emeraldwalk.runonsave
+code --install-extension mhutchie.git-graph
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension octref.vetur
+code --install-extension esbenp.prettier-vscode
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+### 起動
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+npn run serve
+```
