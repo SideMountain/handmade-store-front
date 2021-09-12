@@ -1,32 +1,41 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar app color="#FFF9C4">
+      <div class="d-flex align-center">
+        <v-img
+          class="shrink mr-2"
+          contain
+          :src="require('./assets/origami_logo.png')"
+          width="40"
+        />
+
+        <h2>HANDMADE STORE</h2>
+      </div>
+
+      <v-spacer></v-spacer>
+      <v-btn text @click="$router.push('cart')">
+        <v-icon>mdi-cart-outline</v-icon>
+        <span class="ml-2">Cart</span>
+      </v-btn>
+      <v-btn text @click="alertLogin()">
+        <v-icon>mdi-account</v-icon>
+        <span class="ml-2">Login</span>
+      </v-btn>
+    </v-app-bar>
+
+    <v-main style="padding: 0">
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
 
-#nav {
-  padding: 30px;
+@Component
+export default class App extends Vue {
+  alertLogin() {
+    alert('login');
+  }
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
