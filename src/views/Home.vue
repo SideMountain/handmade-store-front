@@ -21,18 +21,18 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
-  import Carousels from '../components/home/Carousels.vue'
-  import ItemList from '../components/items/ItemList.vue'
-  import SideMenu from '../components/home/SideMenu.vue'
+import Vue from 'vue';
+import Carousels from '../components/home/Carousels.vue';
+import ItemList from '../components/items/ItemList.vue';
+import SideMenu from '../components/home/SideMenu.vue';
 
-  export default Vue.extend({
-    name: 'Home',
+export default Vue.extend({
+  name: 'Home',
 
-    components: {
-      Carousels,
-      ItemList,
-      SideMenu
-    },
-  })
+  components: {
+    Carousels,
+    ItemList,
+    SideMenu,
+  },
+});
 </script>
