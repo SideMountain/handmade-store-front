@@ -50,6 +50,7 @@ bugfix/xxx-xxx-xxx
 6. git push feature/xxx-xxx-xxx
 ※コンフリクトが発生した場合は解消し、1~再度行う
 7. GitHubにてpull requestを作成し、developへmergeする
+※mergeはsquash and mergeで実行する
 
 ### チケット運用
 ・GitHubのissues/New issueから作成
