@@ -53,6 +53,6 @@ bugfix/xxx-xxx-xxx
 ※mergeはsquash and mergeで実行する
 
 ### チケット運用
-・GitHubのissues/New issueから作成
-・担当チケットのAssigneesに自分をセットする
-・対応が完了したらissueをクローズする 
+- GitHubのissues/New issueから作成
+- 担当チケットのAssigneesに自分をセットする
+- 対応が完了したらissueをクローズする 
