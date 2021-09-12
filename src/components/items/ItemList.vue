@@ -12,7 +12,7 @@
           </v-img>
         </v-layout>
         <v-card-title>
-          {{ item.title }}
+          {{ item.name }}
         </v-card-title>
         <v-card-subtitle class="text-right">
           ¥{{ item.price }}
@@ -44,7 +44,7 @@ export default class ItemList extends Vue {
   items = [
     {
       id: '001',
-      title: '商品1',
+      name: '商品1',
       price: '1000',
       explanation:
         '商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明',
@@ -52,7 +52,7 @@ export default class ItemList extends Vue {
     },
     {
       id: '002',
-      title: '商品2',
+      name: '商品2',
       price: '2000',
       explanation:
         '商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明',
@@ -60,7 +60,7 @@ export default class ItemList extends Vue {
     },
     {
       id: '003',
-      title: '商品3',
+      name: '商品3',
       price: '3000',
       explanation:
         '商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明',
@@ -68,7 +68,7 @@ export default class ItemList extends Vue {
     },
     {
       id: '004',
-      title: '商品4',
+      name: '商品4',
       price: '4000',
       explanation:
         '商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明',
@@ -76,7 +76,7 @@ export default class ItemList extends Vue {
     },
     {
       id: '005',
-      title: '商品5',
+      name: '商品5',
       price: '5000',
       explanation:
         '商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明',
@@ -84,7 +84,7 @@ export default class ItemList extends Vue {
     },
     {
       id: '006',
-      title: '商品6',
+      name: '商品6',
       price: '6000',
       explanation:
         '商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明',
