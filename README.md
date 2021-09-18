@@ -11,6 +11,28 @@ git clone https://github.com/SideMountain/handmade-store-front.git
 npm install
 ```
 
+### vscode の設定
+.vscode/setting.jsonに下記を追加
+
+```
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.formatOnType": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "typescript"
+  ],
+}
+```
+
 ### vscode の拡張
 
 ```
@@ -42,14 +64,15 @@ support/xxx-xxx-xxx
 bugfix/xxx-xxx-xxx
 
 #### ブランチ push
-1. git commit -m "作業内容概要"
-2. git checkout develop
-3. git pull
-4. git checkout feature/xxx-xxx-xxx
-5. git merge develop
-6. git push feature/xxx-xxx-xxx
+1. git add 修正したファイルパス
+2. git commit -m "作業内容概要"
+3. git checkout develop
+4. git pull
+5. git checkout feature/xxx-xxx-xxx
+6. git merge develop
+7. git push feature/xxx-xxx-xxx
 ※コンフリクトが発生した場合は解消し、1~再度行う
-7. GitHubにてpull requestを作成し、developへmergeする
+8. GitHubにてpull requestを作成し、developへmergeする
 ※mergeはsquash and mergeで実行する
 
 ### チケット運用
