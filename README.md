@@ -25,7 +25,7 @@ code --install-extension esbenp.prettier-vscode
 ### 起動
 
 ```
-npn run serve
+npm run serve
 ```
 
 ### Git関連
