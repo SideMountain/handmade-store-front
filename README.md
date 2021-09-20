@@ -70,9 +70,9 @@ bugfix/xxx-xxx-xxx
 4. git pull
 5. git checkout feature/xxx-xxx-xxx
 6. git merge develop
-7. git push feature/xxx-xxx-xxx
-※コンフリクトが発生した場合は解消し、1~再度行う
-8. GitHubにてpull requestを作成し、developへmergeする
+7. git push (origin) feature/xxx-xxx-xxx
+※コンフリクトが発生した場合は解消し、1~再度行う。originは初回プッシュのみ含める。
+8. GitHubにてpull requestを作成し、developへmergeする。merge済みのbranchは削除する。
 ※mergeはsquash and mergeで実行する
 
 ### チケット運用
